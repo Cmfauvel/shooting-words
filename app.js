@@ -12,7 +12,7 @@ const api = require("./routes");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("generateurCitations"));
+app.use(express.static(process.cwd()+"/dist/generateurCitations"));
 
 app.use(
   cors({
@@ -22,6 +22,11 @@ app.use(
     // methods: "GET, POST"
   })
 );
+
+app.get('/', (req,res) => {
+  res.sendFile(process.cwd()+"/dist/generateurCitations/index.html")
+});
+
 let port = process.env.PORT || 3005;
 app.use("/api", api);
 
