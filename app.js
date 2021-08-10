@@ -12,7 +12,7 @@ const api = require("./routes");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("./dist"));
+app.use(express.static("generateurCitations"));
 
 app.use(
   cors({
@@ -22,12 +22,12 @@ app.use(
     // methods: "GET, POST"
   })
 );
-let port = 3005;
+let port = process.env.PORT || 3005;
 app.use("/api", api);
 
 //.sync({ force: true })
 db.sequelize.sync().then((req) => {
-  app.listen(port, () => {
+  app.listen(process.env.PORT || 3005, () => {
     console.log("server running");
   });
 });
