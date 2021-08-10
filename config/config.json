@@ -1,9 +1,10 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "fil-rouge",
-    "host": "127.0.0.1",
+    "username": "u257849684_admin1",
+    "password": "Simplon21",
+    "database": "u257849684_filrouge",
+    "host": "45.87.81.51",
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +15,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "dbu741174",
-    "password": "Simplondccf.12",
-    "database": "dbs3423998",
-    "host": "db5004146741.hosting-data.io:3306",
+    "username": "u257849684_admin1",
+    "password": "Simplon21",
+    "database": "u257849684_filrouge",
+    "host": "45.87.81.51",
+    "port": 3306,
     "dialect": "mysql"
   }
 }

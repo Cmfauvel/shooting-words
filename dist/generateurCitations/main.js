@@ -28,6 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = function (a0) { return [a0]; };
 function ListCitationsComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "h5", 6);
@@ -41,6 +42,7 @@ function ListCitationsComponent_div_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, " edit ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "span", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function ListCitationsComponent_div_2_Template_span_click_9_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r3); const citation_r1 = ctx.$implicit; const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r2.deleteCitation(citation_r1.id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](10, " delete ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -95,7 +97,7 @@ class ListCitationsComponent {
     ;
 }
 ListCitationsComponent.ɵfac = function ListCitationsComponent_Factory(t) { return new (t || ListCitationsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_user_service__WEBPACK_IMPORTED_MODULE_3__["UserService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_services_citation_service__WEBPACK_IMPORTED_MODULE_4__["CitationService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_material_dialog__WEBPACK_IMPORTED_MODULE_5__["MatDialog"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"])); };
-ListCitationsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: ListCitationsComponent, selectors: [["app-list-citations"]], decls: 5, vars: 1, consts: [[1, "container"], [1, "cards"], ["class", "card", 4, "ngFor", "ngForOf"], ["routerLink", "/create", 1, "btn", "btn-primary"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-text"], [1, "icon"], ["id", "btn-edit", 1, "material-icons", 3, "routerLink"], ["id", "btn-delete", 1, "material-icons"]], template: function ListCitationsComponent_Template(rf, ctx) { if (rf & 1) {
+ListCitationsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: ListCitationsComponent, selectors: [["app-list-citations"]], decls: 5, vars: 1, consts: [[1, "container"], [1, "cards"], ["class", "card", 4, "ngFor", "ngForOf"], ["routerLink", "/create", 1, "btn", "btn-primary"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-text"], [1, "icon"], ["id", "btn-edit", 1, "material-icons", 3, "routerLink"], ["id", "btn-delete", 1, "material-icons", 3, "click"]], template: function ListCitationsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, ListCitationsComponent_div_2_Template, 11, 5, "div", 2);

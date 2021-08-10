@@ -12,17 +12,17 @@ const api = require("./routes");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("generateurCitations"));
+app.use(express.static("./dist"));
 
 app.use(
   cors({
-    origin: "https://shooting-words.herokuapp.com",
+    origin: "*",
     credentials: true,
     // allowedHeaders: "origin",
     // methods: "GET, POST"
   })
 );
-let port = "https://shooting-words.herokuapp.com" || 3000;
+let port = 3005;
 app.use("/api", api);
 
 //.sync({ force: true })
